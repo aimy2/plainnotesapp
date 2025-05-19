@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: aamy272001/plainnotesapp:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - 'mongodb+srv://aimanmumtaz27:Aiman272001@labdb.gryhgwm.mongodb.net/Notesapp?retryWrites=true&w=majority&appName=labDB'
